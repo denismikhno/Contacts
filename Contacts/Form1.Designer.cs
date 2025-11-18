@@ -131,6 +131,7 @@
             Controls.Add(txtFullName);
             Controls.Add(lblFullName);
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Контакты";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
