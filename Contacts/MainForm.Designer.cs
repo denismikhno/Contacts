@@ -37,8 +37,8 @@
             txtPhone = new TextBox();
             btnAdd = new Button();
             btnDelete = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgContacts = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgContacts).BeginInit();
             SuspendLayout();
             // 
             // lblFullName
@@ -109,20 +109,20 @@
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
-            // dataGridView1
+            // dgContacts
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 53);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(960, 563);
-            dataGridView1.TabIndex = 8;
+            dgContacts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgContacts.Location = new Point(12, 53);
+            dgContacts.Name = "dgContacts";
+            dgContacts.Size = new Size(960, 563);
+            dgContacts.TabIndex = 8;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(984, 628);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgContacts);
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
             Controls.Add(txtPhone);
@@ -135,7 +135,7 @@
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Контакты";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgContacts).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -150,6 +150,6 @@
         private TextBox txtPhone;
         private Button btnAdd;
         private Button btnDelete;
-        private DataGridView dataGridView1;
+        private DataGridView dgContacts;
     }
 }
