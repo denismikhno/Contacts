@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             lblFullName = new Label();
             txtFullName = new TextBox();
             lblEmail = new Label();
@@ -130,7 +131,9 @@
             Controls.Add(lblEmail);
             Controls.Add(txtFullName);
             Controls.Add(lblFullName);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Контакты";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
